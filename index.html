@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=0.3,maximum-scale=2.5,user-scalable=no" />
+<title>cavans</title>
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+<!--必要样式的说法是否-->
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+<!--[if IE]>-->
+	<!--<script src="js/html5.js"></script>-->
+	
+	
+<style>
+.div{width: 37%; height:auto;margin: 0 auto; background:black;position: absolute;left: 31.5%;top:30%;opacity: 0.5;border-radius:3px; padding-bottom:1%;}
+h2{color: white;opacity: 1; text-indent:15px;margin-bottom:2%;}  
+a{border-radius: 3px; padding: 10px;margin-left: 40px; cursor: pointer;align-items: center;text-decoration:none;float: left;color: white;  font-weight: bold;margin-bottom:2%;}
+a:hover{background:white;}
+a:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+a:before,a:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+a:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+a:hover:before,a:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+</style>
+</head>
+<body>
+<audio autoplay="autoplay" loop="loop" preload="auto"
+            src="img/a.mp3">
+      你的浏览器不支持audio标签
+</audio>
+<div class="container demo-2">
+	<div class="content">
+		<div id="large-header" class="large-header">
+			<canvas id="demo-canvas"></canvas>
+				<div class="div">
+					<h2>欢迎光临!</h2>
+					
+					<a href="https://wangxiansen8049.github.io/home/%E9%A1%B9%E7%9B%AE/ViVo.html">vivo 项目</a>
+					<a href="https://wangxiansen8049.github.io/home/Guan/Administration.html">后台管理</a>
+					<a href="https://wangxiansen8049.github.io/home/jingdong/jingdong.html">京东首页</a>
+					<a href="https://wangxiansen8049.github.io/home/xuan/demo.html">图片旋转</a>
+					<a href="https://wangxiansen8049.github.io/work/">微信场景</a>
+					<a href="https://wangxiansen8049.github.io/test3/">雪山和院</a>
+					<a href="https://wangxiansen8049.github.io/test1/">伦敦时尚周</a>
+				</div>
+		</div>
+		
+	</div>
+</div><!-- /container -->
+<script src="js/rAF.js"></script>
+<script src="js/demo-2.js"></script>
+<script>
+	var vw = document.documentElement.clientWidth || document.bod.clientWidth;
+	var vh = document.documentElement.clientHeight || document.bod.clientHeight;
+	var div =document.getElementsByTagName("div")[0];
+	div.style.fontSize=vw/100+"px";
+	
+	
+</script>
+</body>
+</html>
